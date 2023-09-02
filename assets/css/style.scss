@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body 
+{
+    background-color: #f1f1f1;
+}
+:root
+{
+    --main_lg_color: linear-gradient(to right, #f7820c, #f7ca14);
+    --first-color: #f7820c;
+}
+
+
+.login_panel
+{
+    display: flex;
+    justify-content: center;
+    .login_panel_content
+    {
+        margin-top: 50px;
+        .login_panel_form 
+        {
+            background-color: #fff;
+            box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+            border-radius: 3px;
+            width: 100%;
+
+            img 
+            {
+                width: 150px;
+            }
+            .login_panel_title
+            {
+                font-size: 20px;
+                margin-top: 10px;
+                font-weight: 600;
+            }
+            input 
+            {
+                margin-bottom: 10px;
+                padding: 10px;
+                width: 100%;
+            }
+            .login_btn 
+            {
+                width: 100%;
+                background-image: var(--main_lg_color);
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+header 
+{
+    background-color: #f7820c;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 15px;
+    
+    .header_content
+    {
+        display: flex;
+        justify-content: space-between;
+        .header_title
+        {
+            font-size: 24px;
+            margin-right: 5px;
+            font-weight: 600;
+            color: #fff;
+        }
+        #logout_btn 
+        {
+            border: none;
+            background-color: #db0f0f;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 15px;
+            box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+#axie_daily_quota_panel
+{
+    .axie_daily_quota_panel_content
+    {
+        padding: 100px 0 50px 0;
+        .axie_daily_quota_table_data_list
+        {
+            margin-top: 20px;
+            #add_quota_btn
+            {
+                background-image: var(--main_lg_color);
+                border: none;
+                padding: 5px;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 16px;
+                box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+                margin-right: 5px;
+                margin-bottom: 15px;
+            }
+            #view_axie_team_btn 
+            {
+                background-image: var(--main_lg_color);
+                border: none;
+                padding: 5px;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 16px;
+                box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+                margin-bottom: 15px;
+            }
+            .total_slp_gain
+            {
+                font-weight: 600;
+                color: #f7820c;
+                display: block;
+            }
+            .days_played
+            {
+                font-weight: 600;
+                color: #f7820c;
+            }
+            .axie_daily_quota_table 
+            {  
+                width: 100%;
+                text-align: center;
+                font-size: 17px;
+                box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+                margin-top: 15px;
+                thead 
+                {
+                    background-image: var(--main_lg_color);
+                    font-weight: 600;
+                    color: #242424;
+                    tr
+                    {
+                        td 
+                        {
+                            padding: 10px;
+                            border: 1px solid #ffc891;
+                        }
+                    }
+                }
+                tbody 
+                {
+                    background-color: #e9e8e8;
+                    font-size: 15px;
+                    tr
+                    {
+                        td 
+                        {
+                            padding: 5px;
+                            border: 1px solid #ffc891;
+                            .edit_quota_btn
+                            {
+                                color: #21cf3b;
+                            }
+                            .delete_quota_btn
+                            {
+                                color: #db0f0f;
+                            }
+                        }
+                    }
+                    tr:hover
+                    {
+                        background-color: #ffc891;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
+
+
+#add_quota_modal
+{
+    .add_quota_modal_content
+    {
+        text-align: center;
+
+        .modal-header 
+        {
+            .add_quota_title
+            {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--first-color);
+            }
+            .close_modal_btn 
+            {
+                border: none;
+                width: 100px;
+                float: right;
+                font-size: 30px;
+            }
+        }
+        .add_quota_form
+        {
+            background-color: #fff;
+            margin-top: 20px;
+            input
+            {
+                margin-bottom: 10px;
+                padding: 10px;
+                width: 100%;
+            }
+            #add_quota_btn
+            {
+                background-image: var(--main_lg_color);
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+#axie_team_modal
+{
+    .axie_team_modal_content
+    {
+        .modal-header
+        {
+            .axie_team_title
+            {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--first-color);
+            }
+            .close_modal_btn 
+            {
+                border: none;
+                width: 100px;
+                float: right;
+                font-size: 30px;
+            }
+        }
+        .modal-body
+        {
+            .axie_team
+            {
+                text-align: center;
+                .axie_pet 
+                {
+                    margin-bottom: 15px;
+                    img 
+                    {
+                        border-radius: 5px;
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#edit_quota
+{
+    .edit_quota_content
+    {
+        padding: 120px 0 50px 0;
+        .edit_quota_form
+        {
+            background-color: #fff;
+            box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 3px;
+            width: 100%;
+            .back_btn 
+            {
+                a 
+                {
+                    color: #f7820c;
+                    text-decoration: none;
+                }
+            }
+            h1 
+            {
+                margin-top: 15px;
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--first-color);
+            }
+            input 
+            {
+                margin-bottom: 10px;
+                padding: 10px;
+                width: 100%;
+            }
+            #edit_quota_btn
+            {
+                background-image: var(--main_lg_color);
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+#scroll_to_top_arrow
+{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border: none;
+    padding: 15px;
+    background-image: var(--main_lg_color);
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 99;
+}
+#scroll_to_top_arrow.scroll_to_top_arrow_active
+{
+    display: block;
+}

@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+:root {
+  --main_lg_color: linear-gradient(to right, #f7820c, #f7ca14);
+  --first-color: #f7820c;
+}
+
+.login_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login_panel .login_panel_content {
+  margin-top: 50px;
+}
+
+.login_panel .login_panel_content .login_panel_form {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.login_panel .login_panel_content .login_panel_form img {
+  width: 150px;
+}
+
+.login_panel .login_panel_content .login_panel_form .login_panel_title {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.login_panel .login_panel_content .login_panel_form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.login_panel .login_panel_content .login_panel_form .login_btn {
+  width: 100%;
+  background-image: var(--main_lg_color);
+  border: none;
+  color: #fff;
+}
+
+header {
+  background-color: #f7820c;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 15px;
+}
+
+header .header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header_content .header_title {
+  font-size: 24px;
+  margin-right: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+header .header_content #logout_btn {
+  border: none;
+  background-color: #db0f0f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content {
+  padding: 100px 0 50px 0;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list {
+  margin-top: 20px;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list #add_quota_btn {
+  background-image: var(--main_lg_color);
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list #view_axie_team_btn {
+  background-image: var(--main_lg_color);
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .total_slp_gain {
+  font-weight: 600;
+  color: #f7820c;
+  display: block;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .days_played {
+  font-weight: 600;
+  color: #f7820c;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table thead {
+  background-image: var(--main_lg_color);
+  font-weight: 600;
+  color: #242424;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table thead tr td {
+  padding: 10px;
+  border: 1px solid #ffc891;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table tbody {
+  background-color: #e9e8e8;
+  font-size: 15px;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table tbody tr td {
+  padding: 5px;
+  border: 1px solid #ffc891;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table tbody tr td .edit_quota_btn {
+  color: #21cf3b;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table tbody tr td .delete_quota_btn {
+  color: #db0f0f;
+}
+
+#axie_daily_quota_panel .axie_daily_quota_panel_content .axie_daily_quota_table_data_list .axie_daily_quota_table tbody tr:hover {
+  background-color: #ffc891;
+}
+
+#add_quota_modal .add_quota_modal_content {
+  text-align: center;
+}
+
+#add_quota_modal .add_quota_modal_content .modal-header .add_quota_title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--first-color);
+}
+
+#add_quota_modal .add_quota_modal_content .modal-header .close_modal_btn {
+  border: none;
+  width: 100px;
+  float: right;
+  font-size: 30px;
+}
+
+#add_quota_modal .add_quota_modal_content .add_quota_form {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+#add_quota_modal .add_quota_modal_content .add_quota_form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+#add_quota_modal .add_quota_modal_content .add_quota_form #add_quota_btn {
+  background-image: var(--main_lg_color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#axie_team_modal .axie_team_modal_content .modal-header .axie_team_title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--first-color);
+}
+
+#axie_team_modal .axie_team_modal_content .modal-header .close_modal_btn {
+  border: none;
+  width: 100px;
+  float: right;
+  font-size: 30px;
+}
+
+#axie_team_modal .axie_team_modal_content .modal-body .axie_team {
+  text-align: center;
+}
+
+#axie_team_modal .axie_team_modal_content .modal-body .axie_team .axie_pet {
+  margin-bottom: 15px;
+}
+
+#axie_team_modal .axie_team_modal_content .modal-body .axie_team .axie_pet img {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#edit_quota .edit_quota_content {
+  padding: 120px 0 50px 0;
+}
+
+#edit_quota .edit_quota_content .edit_quota_form {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+#edit_quota .edit_quota_content .edit_quota_form .back_btn a {
+  color: #f7820c;
+  text-decoration: none;
+}
+
+#edit_quota .edit_quota_content .edit_quota_form h1 {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--first-color);
+}
+
+#edit_quota .edit_quota_content .edit_quota_form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+#edit_quota .edit_quota_content .edit_quota_form #edit_quota_btn {
+  background-image: var(--main_lg_color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#scroll_to_top_arrow {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border: none;
+  padding: 15px;
+  background-image: var(--main_lg_color);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 99;
+}
+
+#scroll_to_top_arrow.scroll_to_top_arrow_active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
